@@ -109,21 +109,75 @@
 
 //Ternary Operator -- koşullu operatör
 
-const yaş = 15;
-yaş >= 18
-  ? console.log("araba kullanabilirsin ")
-  : console.log("araba kullanamazsın");
+// const yaş = 15;
+// yaş >= 18
+//   ? console.log("araba kullanabilirsin ")
+//   : console.log("araba kullanamazsın");
 
-const araba = yaş >= 18 ? "araba sürebilir" : "süremez";
-console.log(araba);
+// const araba = yaş >= 18 ? "araba sürebilir" : "süremez";
+// console.log(araba);
 
-console.log(`Bu yaşta ${yaş >= 18 ? "araba sürebilir" : "arkaya geç"}`);
+// console.log(`Bu yaşta ${yaş >= 18 ? "araba sürebilir" : "arkaya geç"}`);
 
-const ulkeNüfus = 33;
-const ulkeİsmi = "italya";
+// const ulkeNüfus = 33;
+// const ulkeİsmi = "italya";
 
-console.log(
-  `${ulkeİsmi}'nın nüfusu ortlamanın ${
-    ulkeNüfus >= 30 ? " üstünde" : "italyanın  altında"
-  }`
-);
+// console.log(
+//   `${ulkeİsmi}'nın nüfusu ortlamanın ${
+//     ulkeNüfus >= 30 ? " üstünde" : " altında"
+//   }`
+// );
+
+// const yaş = 21;
+
+// if (yaş > 21) {
+//   console.log("kola");
+// } else if (yaş > 58) {
+//   console.log("kolayı bırakmalısın");
+// } else {
+//   console.log("su");
+// }
+// const yaş1 = 25;
+// yaş1 > 21
+//   ? yaş1 > 58
+//     ? console.log("kolayı bırakmalısın")
+//     : console.log("su")
+//   : console.log("kola içebilirsim");
+
+// let içecek =
+//   yaş1 >= 18
+//     ? "kolayı severim"
+//     : yaş1 >= 16
+//     ? "sodayı severim"
+//     : yaş1 >= 10
+//     ? "meyve suyu severim"
+//     : yaş1 >= 8
+//     ? "su severim"
+//     : "sevmem";
+
+// let bahsis;
+// const fatura = 450;
+// const bahşiş = fatura * 0.15;
+// const bahşiş2 = fatura * 0.2;
+// console.log(
+//   fatura >= 50 && fatura <= 300
+//     ? `fatura tutarınız${fatura}'dir bahşiş tutarınız${bahşiş}'dır. Toplam tutar ${
+//         fatura + bahşiş
+//       }`
+//     : `fatura tutarınız${fatura}'dir. bahşiş tutarınız ${bahşiş2} TL'dir. Toplam tutar ${
+//         fatura + bahşiş2
+//       }`
+// );
+
+const fatura = 250;
+fatura >= 50 && fatura <= 300
+  ? console.log(
+      `fatura tutarınız${fatura}'dır. Bahşiş tutarınız ${
+        fatura * 0.15
+      }'dir. Toplam tutarınız ${fatura + fatura * 0.15}`
+    )
+  : console.log(
+      ` fatura tutarınız${fatura}'dır. Bahşiş tutarınız ${
+        fatura * 0.15
+      }'dir. Toplam tutarınız ${fatura + fatura * 0.15}`
+    );
